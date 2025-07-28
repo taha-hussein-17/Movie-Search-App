@@ -21,8 +21,11 @@
   - صفحة 404 مخصصة عند عدم وجود الفيلم.
 
 صور من التطبيق
-<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/ca66ab45-1956-4ff7-9bcb-50cea271a05e" />
-<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/848f23d1-c835-4074-ba73-b7d19d68aee0" />
+
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/428833d3-ea63-4184-9146-4a30e834f1e1" />
+<img width="1920" height="1080" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/70e161bd-0282-44d5-a83e-031ca3d905c0" />
+<img width="1920" height="1080" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/e32588eb-d535-46ca-b407-bb685d88028a" />
+
 
 
 
