@@ -1,7 +1,7 @@
 'use client'
 import React, { useMemo } from 'react';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import debounce from 'lodash.debounce';
 // Search input component props
 interface Props {

@@ -10,23 +10,23 @@ export default function HomePage() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [error, setError] = useState<string>('');
   const [loading, setLoading] = useState(false);
-const handleSearch = async (query: string) => {
-  setLoading(true);
-  setError('');
-  localStorage.setItem('lastSearch', query);
-  try {
-    const result = await fetchMovies(query);
-    setMovies(result);
-  } catch (err: unknown) {
-    if (err instanceof Error) {
-      setError(err.message || 'Something went wrong');
-    } else {
-      setError('Something went wrong');
-    }
-  } finally {
-    setLoading(false);
-  }
 
+  const handleSearch = async (query: string) => {
+    setLoading(true);
+    setError('');
+    localStorage.setItem('lastSearch', query);
+    try {
+      const result = await fetchMovies(query);
+      setMovies(result);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message || 'Something went wrong');
+      } else {
+        setError('Something went wrong');
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

@@ -2,6 +2,7 @@
 import { fetchMovieDetails } from '@/lib/fetcher';
 import { MovieDetails } from '@/types/movie';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface PageProps {
   params: Promise<{ id: string }>; 
@@ -25,11 +26,8 @@ export default async function MovieDetailsPage({ params }: PageProps) {
       </Link>
       <div className="flex flex-col md:flex-row gap-6">
         {/* Movie Poster */}
-        <img
-          src={movie.Poster !== 'N/A' ? movie.Poster : '/no-image.png'}
-          alt={movie.Title}
-          className="w-full md:w-64 object-cover rounded"
-        />
+       <Image src={movie.Poster} alt={movie.Title} width={300} height={450} />
+
         <div>
           {/* Movie Details */}
           <h1 className="text-2xl font-bold">{movie.Title} ({movie.Year})</h1>
